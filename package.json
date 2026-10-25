@@ -1,0 +1,33 @@
+{
+  "name": "@openasy/siem-agent",
+  "version": "0.5.0",
+  "private": true,
+  "description": "OpenAsy SIEM agent: installed once, it reads the security events in the system journal of hosts over SSH and sends them to SIEM. Nothing is installed on the hosts.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openasy/siem-agent.git"
+  },
+  "scripts": {
+    "start": "node agent/main.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run"
+  },
+  "prettier": "@openasy/code-style/prettier",
+  "engines": {
+    "node": ">=26.12.0",
+    "npm": ">=11"
+  },
+  "devDependencies": {
+    "@openasy/code-style": "https://github.com/openasy/code-style/releases/download/v0.1.2/openasy-code-style-0.1.2.tgz",
+    "@types/node": "^26.6.5",
+    "oxlint": "1.87.0",
+    "prettier": "3.9.9",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
