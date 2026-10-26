@@ -36,7 +36,7 @@ docker run -d --name siem-agent --restart unless-stopped --read-only --tmpfs /tm
   --cap-drop ALL --security-opt no-new-privileges \
   -v siem-agent-data:/data -v "$PWD/openasy-agent-kek:/run/secrets/openasy-agent-kek:ro" \
   -e SIEM_URL=https://siem.example.com -e SIEM_ENROLL_TOKEN=oie_... \
-  ghcr.io/openasy/siem-agent:0.5.0
+  ghcr.io/openasy/siem-agent:0.6.0
 ```
 
 The agent must be the same version as SIEM (ADR 0019); another version is refused. The hosts it reads come from the

@@ -1,6 +1,6 @@
 {
   "name": "@openasy/siem-agent",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "description": "OpenAsy SIEM agent: installed once, it reads the security events in the system journal of hosts over SSH and sends them to SIEM. Nothing is installed on the hosts.",
   "license": "AGPL-3.0-only",
